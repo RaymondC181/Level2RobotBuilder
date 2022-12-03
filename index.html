@@ -10,7 +10,7 @@
 </head>
 <body onload = initialize();>
     <div class = container>
-        <h1>Robot</h1>
+        <h1>Robot Builder</h1>
         <div id = imagebox>
             <img id = image >
         </div>
@@ -18,9 +18,9 @@
 
         <p>Power type</p>
         <p id = type>No power installed</p>
-        <button onclick = hydro();>Hydro</button>
-        <button onclick = nuclear();>Nuclear</button>
-        <button onclick = solar();>Solar</button>
+        <button onclick = hydro(); id = h>Hydro</button>
+        <button onclick = nuclear(); id = n>Nuclear</button>
+        <button onclick = solar(); id = s>Solar</button>
 
 
         <p>Scanner</p>
@@ -56,5 +56,7 @@
             <img id = img src = "robot5.png" onclick = "changeImage5();">
         </div>
     </div>
+
+    <button id = final onclick = finalize();>Finalize</button>
 </body>
 </html>

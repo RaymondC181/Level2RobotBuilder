@@ -134,3 +134,20 @@ function changeImage5()
 {
     document.getElementById("image").src = "robot5.png";
 }
+
+
+function finalize(){
+    document.getElementById('h').hidden = true
+    document.getElementById('n').hidden = true
+    document.getElementById('s').hidden = true
+    document.getElementById('scanner').hidden = true
+    document.getElementById('defensive').hidden = true
+    document.getElementById('addPower').hidden = true
+    document.getElementById('minusPower').hidden = true
+    document.getElementById('addSpeed').hidden = true
+    document.getElementById('minusSpeed').hidden = true
+    document.getElementById('addStructure').hidden = true
+    document.getElementById('minusStructure').hidden = true
+    document.getElementById('image_grid').hidden = true
+
+}
