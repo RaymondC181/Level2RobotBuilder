@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type = "text/javascript" src = "main.js"></script>
+</head>
+<body onload = initialize();>
+    <div class = container>
+        <h1>Robot</h1>
+        <div id = imagebox>
+            <img id = image >
+        </div>
+
+
+        <p>Power type</p>
+        <p id = type>No power installed</p>
+        <button onclick = hydro();>Hydro</button>
+        <button onclick = nuclear();>Nuclear</button>
+        <button onclick = solar();>Solar</button>
+
+
+        <p>Scanner</p>
+        <p id = scannerMode>Off</p>
+        <input type="checkbox" value = "no" id = scanner onclick="myScanner()">               
+
+        <p>Defensive</p>
+        <p id = defenseMode>Off</p>
+        <input type="checkbox" value = "yes" id = defensive onclick="myDefensive()">
+
+        <p>Power Level</p>
+        <p id = powerLevel>0</p>
+        <button id = addPower onclick = addP();>Add</button>
+        <button id = minusPower onclick = minusP();>Minus</button>
+
+
+        <p>Top speed</p>
+        <p id = topSpeed>0</p>
+        <button id = addSpeed onclick = addS();>Add</button>
+        <button id = minusSpeed onclick = minusS();>Minus</button>
+
+
+        <p>Structure Integerity</p>
+        <p id = structureIntegerity>0</p>
+        <button id = addStructure onclick = addI();>Add</button>
+        <button id = minusStructure onclick = minusI();>Minus</button>
+
+        <div id = "image_grid">
+            <img id = img src = "robot1.png" onclick = "changeImage1();">
+            <img id = img src = "robot2.png" onclick = "changeImage2();">
+            <img id = img src = "robot3.png" onclick = "changeImage3();">
+            <img id = img src = "robot4.png" onclick = "changeImage4();">
+            <img id = img src = "robot5.png" onclick = "changeImage5();">
+        </div>
+    </div>
+</body>
+</html>
